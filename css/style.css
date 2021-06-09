@@ -142,8 +142,19 @@ body {
   margin-bottom: 4rem; }
 
 .homes {
-  background-color: #101d2c;
-  grid-column: center-start / center-end; }
+  margin: 15rem 0;
+  grid-column: center-start / center-end;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  grid-gap: 7rem; }
+  .homes .home {
+    background-color: #f9f7f6; }
+    .homes .home__img {
+      width: 100%; }
+    .homes .home__location svg, .homes .home__rooms svg, .homes .home__area svg, .homes .home__price svg {
+      fill: #c69963;
+      height: 2rem;
+      width: 2rem; }
 
 .gallery {
   background-color: #54483A;
